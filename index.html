@@ -3,10 +3,45 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>TESTING</title>
+    <link rel="stylesheet" href="style.css" />
+    <title>JS SOLO PROJECT</title>
   </head>
   <body>
-    <h1>WELCOME HERE</h1>
-    <h1>Hello world</h1>
+    <div id="modal">
+      <div id="notify" onclick="playNext()">
+        <p>You have Reset the SCORE.</p>
+        <button id="ok">Play Next</button>
+      </div>
+    </div>
+    <div id="wrapper">
+      <div class="left-box">
+        <p id="home">HOME</p>
+        <div class="bg-01">
+          <p id="counter-01">0</p>
+        </div>
+        <div class="add-grp-01">
+          <div class="box" id="grp1-box1" onclick="homeAdditionOne()">+1</div>
+          <div class="box" id="grp1-box2" onclick="homeAdditionTwo()">+2</div>
+          <div class="box" id="grp1-box3" onclick="homeAdditionThree()">+3</div>
+        </div>
+      </div>
+
+      <button id="reset">RESET</button>
+
+      <div class="right-box">
+        <p id="guest">Guest</p>
+        <div class="bg-02">
+          <p id="counter-02">0</p>
+        </div>
+        <div class="add-grp-02">
+          <div class="box" id="grp2-box1" onclick=" guestAdditionOne()">+1</div>
+          <div class="box" id="grp2-box2" onclick=" guestAdditionTwo()">+2</div>
+          <div class="box" id="grp2-box3" onclick=" guestAdditionThree()">
+            +3
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="script.js"></script>
   </body>
 </html>
